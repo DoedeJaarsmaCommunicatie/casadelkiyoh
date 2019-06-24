@@ -1,0 +1,61 @@
+# Copyright (C) 2019 Mitch Hijlkema
+# This file is distributed under the same license as the Casadelkiyoh plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Casadelkiyoh 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/casadelkiyoh\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-06-24T08:14:20+00:00\n"
+"PO-Revision-Date: 2019-06-24 10:18+0200\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Domain: casadelkiyoh\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl\n"
+
+#. Plugin Name of the plugin
+msgid "Casadelkiyoh"
+msgstr "Casa del Kiyoh"
+
+#. Plugin URI of the plugin
+msgid "https://casadelvino.nl/"
+msgstr "https://casadelvino.nl/"
+
+#. Description of the plugin
+msgid "This plugin adds a special kiyoh caching functionality"
+msgstr "Deze plugin voegt speciale functionaliteiten toe om Kiyoh resultaten op te slaan zonder over de limieten heen te gaan"
+
+#. Author of the plugin
+msgid "Mitch Hijlkema"
+msgstr "Mitch Hijlkema"
+
+#. Author URI of the plugin
+msgid "https://doedejaarsma.nl/"
+msgstr "https://doedejaarsma.nl/"
+
+#: includes/class-cdk-options.php:30 includes/class-cdk-options.php:45
+msgid "Kiyoh Settings"
+msgstr "Kiyoh Instellingen"
+
+#: includes/class-cdk-options.php:31
+msgid "These settings make sure you get the most out of the CasadelKiyoh plugin"
+msgstr "Deze instellingen zorgen er voor dat je de plugin optimaal kan gebruiken"
+
+#: includes/class-cdk-options.php:46
+msgid "Fill in the connector code to use this plugin"
+msgstr "Voer de “Connector Code” in om deze plugin te gebruiken"
+
+#: includes/class-cdk-options.php:62
+msgid "Kiyoh Connector Code"
+msgstr "Kiyoh Connector Code"
+
+#: includes/class-cdk-options.php:73
+msgid "Kiyoh Company Code"
+msgstr "Kiyoh Company Code"
+
+#: includes/class-cdk-model.php:75
+msgid "No connector code or company code supplied"
+msgstr "Geen “Connector Code” of “Company Code” aangeleverd"

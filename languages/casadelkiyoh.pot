@@ -1,0 +1,60 @@
+# Copyright (C) 2019 Mitch Hijlkema
+# This file is distributed under the same license as the Casadelkiyoh plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Casadelkiyoh 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/casadelkiyoh\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-06-24T08:14:20+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.2.0\n"
+"X-Domain: casadelkiyoh\n"
+
+#. Plugin Name of the plugin
+msgid "Casadelkiyoh"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://casadelvino.nl/"
+msgstr ""
+
+#. Description of the plugin
+msgid "This plugin adds a special kiyoh caching functionality"
+msgstr ""
+
+#. Author of the plugin
+msgid "Mitch Hijlkema"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://doedejaarsma.nl/"
+msgstr ""
+
+#: includes/class-cdk-options.php:30
+#: includes/class-cdk-options.php:45
+msgid "Kiyoh Settings"
+msgstr ""
+
+#: includes/class-cdk-options.php:31
+msgid "These settings make sure you get the most out of the CasadelKiyoh plugin"
+msgstr ""
+
+#: includes/class-cdk-options.php:46
+msgid "Fill in the connector code to use this plugin"
+msgstr ""
+
+#: includes/class-cdk-options.php:62
+msgid "Kiyoh Connector Code"
+msgstr ""
+
+#: includes/class-cdk-options.php:73
+msgid "Kiyoh Company Code"
+msgstr ""
+
+#: includes/class-cdk-model.php:75
+msgid "No connector code or company code supplied"
+msgstr ""
