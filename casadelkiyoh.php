@@ -13,7 +13,6 @@
  */
 
 // Your code starts here.
-
 require_once __DIR__ . '/vendor/autoload.php';
 
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
