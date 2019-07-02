@@ -77,6 +77,7 @@ class cdk_model {
 		$kiyoh->total_score   = $opt['total_score'];
 		$kiyoh->total_reviews = $opt['total_reviews'];
 		$kiyoh->kiyoh_url     = $opt['kiyoh_url'];
+		$kiyoh->reviews       = new stdClass();
 		$kiyoh->reviews->pro  = $opt['reviews']['pro'];
 
 		return $kiyoh;
