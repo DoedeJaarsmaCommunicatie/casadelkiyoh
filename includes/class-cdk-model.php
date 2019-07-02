@@ -51,7 +51,9 @@ class cdk_model {
 	/**
 	 * Cdk_model constructor.
 	 */
-	public function __construct() {}
+	public function __construct() {
+		$this->errors = new WP_Error();
+	}
 
 	/**
 	 * Get a new \stdClass with data for Kiyoh.
@@ -92,7 +94,6 @@ class cdk_model {
 	 * Fetches the data for Rest.
 	 */
 	public function fetch() {
-		$this->errors = new WP_Error();
 		$this->set_company_data();
 		$this->fetch_data();
 	}
