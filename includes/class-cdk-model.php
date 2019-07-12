@@ -104,7 +104,7 @@ class cdk_model {
 	 *
 	 * @return void
 	 */
-	private function set_company_data() : void {
+	protected function set_company_data() : void {
 		$conn_code = get_theme_mod( 'cdelk_conn_code' );
 		$comp_code = get_theme_mod( 'cdelk_comp_code' );
 
@@ -146,7 +146,7 @@ class cdk_model {
 	 *
 	 * @return void
 	 */
-	private function set_data(): void {
+	protected function set_data(): void {
 		update_option( 'cdelk_kiyoh_score', $this->company->getTotalScore() );
 		update_option( 'cdelk_kiyoh_reviews_count', $this->company->getTotalReviews() );
 		update_option( 'cdelk_kiyoh_url', $this->company->getUrl() );
@@ -189,7 +189,7 @@ class cdk_model {
 	 *
 	 * @return mixed
 	 */
-	private function set_or_get_transient() {
+	protected function set_or_get_transient() {
 		if ( ! ( $tran = get_transient( 'cdelk_kiyoh_fetch' ) ) ) {
 			set_transient( 'cdelk_kiyoh_fetch', 1, 43200 );
 		}
@@ -202,7 +202,7 @@ class cdk_model {
 	 *
 	 * @return void
 	 */
-	private function set_kiyoh() : void {
+	protected function set_kiyoh() : void {
 		$this->client = new Kiyoh(
 			$this->conn_code,
 			$this->company_code

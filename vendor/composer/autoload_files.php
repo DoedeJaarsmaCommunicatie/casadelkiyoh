@@ -14,4 +14,5 @@ return array(
     'c39e5e966364f845b8dc03db0a1c135c' => $vendorDir . '/aristath/kirki/kirki.php',
     'c8f7179347ced746e5b8b3dbaf872eae' => $baseDir . '/includes/class-cdk-options.php',
     '0424fcff289c96ab0c7dc245204fd34d' => $baseDir . '/includes/class-cdk-model.php',
+    '5d7ec68c27b45cf9bf1896ddcaf9e01a' => $baseDir . '/includes/class-cdk-hashed-model.php',
 );

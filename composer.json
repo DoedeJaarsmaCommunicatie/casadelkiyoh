@@ -2,13 +2,15 @@
     "require": {
         "jketelaar/php-kiyoh-api": "^1.0",
         "aristath/kirki": "^3.0",
-        "yahnis-elsts/plugin-update-checker": "^4.6"
+        "yahnis-elsts/plugin-update-checker": "^4.6",
+        "guzzlehttp/guzzle": "~6.0"
     },
   "autoload": {
     "files": [
       "vendor/aristath/kirki/kirki.php",
       "includes/class-cdk-options.php",
-      "includes/class-cdk-model.php"
+      "includes/class-cdk-model.php",
+      "includes/class-cdk-hashed-model.php"
     ]
   }
 }

@@ -7,7 +7,7 @@
  * Author URI:      https://doedejaarsma.nl/
  * Text Domain:     casadelkiyoh
  * Domain Path:     /languages
- * Version:         1.1.2
+ * Version:         1.2.0
  *
  * @package         Casadelkiyoh
  */
@@ -24,6 +24,11 @@ $my_update_checker = Puc_v4_Factory::buildUpdateChecker(
 add_filter( 'kirki_telemetry', '__return_false' );
 
 new cdk_options();
-$kiyoh = new cdk_model();
+
+if (false === get_theme_mod('cdelk_use_hash', true)) {
+	$kiyoh = new cdk_model();
+} else {
+	$kiyoh = new cdk_hashed_model();
+}
 
 $kiyoh->hook_api();
