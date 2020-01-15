@@ -4,7 +4,7 @@
 **Donate link:** https://aristath.github.io/donate  
 **Requires at least:** 4.9  
 **Tested up to:** 5.2  
-**Stable tag:** 3.0.42  
+**Stable tag:** 3.0.45  
 **License:** MIT  
 **License URI:** https://opensource.org/licenses/MIT  
 
@@ -59,6 +59,8 @@ Premium controls are also available for premium themes:
 * [Kirki Box Model](https://wplemon.com/downloads/kirki-box-model/)
 * [Kirki Box Shadow](https://wplemon.com/downloads/kirki-box-shadow/)
 
+All premium controls are also [available as a pack](https://wplemon.com/downloads/kirki-premium-controls-pack/)
+
 Theme developers should be familiar with the Customizer API before you start writing your theme using Kirki. An excellent handbook for the WordPress Customizer can be found on the [developer.wordpress.org](https://developer.wordpress.org/themes/customize-api/) website.
 
 You can find detailed documentation on how to use Kirki on [kirki.org](https://kirki.org)
@@ -73,12 +75,22 @@ If you want to integrate Kirki in your theme or plugin, please read the instruct
 
 ## Changelog ##
 
-### 3.0.42 ###
+### 3.0.34 ###
 
-Jun.16 2019, dev time: 2h
+### 3.0.45 - 2019-09-01 ###
 
-* Deprecated: `fontawesome` field was deprecated. If a theme uses this field users will be prompted to install the official Font Awesome plugin from the w.org repository.
-* Fix: Transient for Google Fonts now has a lifetime of 1 day instead of 1 week.
-* Fix: Updated Google Fonts list.
+### Fixed
+* Compatibility with the latest Gutenberg plugin versions.
+* Styles for normal font-weights in typography controls (`regular` to `400` conversion).
+
+### Changed
+* Updated Google-Fonts lists.
+
+### Removed
+* Backup fonts are no longer needed since google-fonts are no longer loaded from the google CDN.
+
+### Deprecated
+* `kirki_fonts_backup_fonts` filter.
+* `Kirki_Fonts::get_backup_fonts()` method.
 
 [See the previous changelogs here](https://github.com/aristath/kirki/blob/master/CHANGELOG.md).
