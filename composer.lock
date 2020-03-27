@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "72d7e5339b847b9edbd5bfeb553ed302",
+    "content-hash": "c0da35f4ac9ec1d521747205bab4d197",
     "packages": [
         {
             "name": "aristath/kirki",
-            "version": "v3.0.45",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aristath/kirki.git",
-                "reference": "5045850cfdfd319c9354fec46c333a140509b098"
+                "reference": "8fffee314c70e67a8844c0b863aca7bb45ee105b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aristath/kirki/zipball/5045850cfdfd319c9354fec46c333a140509b098",
-                "reference": "5045850cfdfd319c9354fec46c333a140509b098",
+                "url": "https://api.github.com/repos/aristath/kirki/zipball/8fffee314c70e67a8844c0b863aca7bb45ee105b",
+                "reference": "8fffee314c70e67a8844c0b863aca7bb45ee105b",
                 "shasum": ""
             },
             "require": {
@@ -55,7 +55,17 @@
                 "customizer",
                 "wordpress"
             ],
-            "time": "2019-09-01T06:56:49+00:00"
+            "funding": [
+                {
+                    "url": "https://aristath.github.io/donate",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/aristath",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-03-01T14:46:32+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -248,21 +258,26 @@
         },
         {
             "name": "jketelaar/php-kiyoh-api",
-            "version": "1.0.1",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JKetelaar/PHP-Kiyoh-API.git",
-                "reference": "47d457daa56506da2ed7a7c766de8e3c4fe6c627"
+                "reference": "8ba975d5c8290d287712f5bfe98a4c52a68a839e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JKetelaar/PHP-Kiyoh-API/zipball/47d457daa56506da2ed7a7c766de8e3c4fe6c627",
-                "reference": "47d457daa56506da2ed7a7c766de8e3c4fe6c627",
+                "url": "https://api.github.com/repos/JKetelaar/PHP-Kiyoh-API/zipball/8ba975d5c8290d287712f5bfe98a4c52a68a839e",
+                "reference": "8ba975d5c8290d287712f5bfe98a4c52a68a839e",
                 "shasum": ""
             },
             "require": {
+                "ext-simplexml": "*",
                 "guzzlehttp/guzzle": "^6.2",
-                "php": "^5.5 || ^7.0"
+                "php": "~7.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "7"
             },
             "type": "library",
             "autoload": {
@@ -279,21 +294,16 @@
                     "name": "JKetelaar",
                     "email": "jeroen@ketelaar.me",
                     "homepage": "http://jketelaar.nl/"
-                },
-                {
-                    "name": "Elwin Dokter",
-                    "email": "elwin@reprovinci.nl",
-                    "homepage": "https://lwin.nl"
                 }
             ],
-            "description": "Allows you to interact with Kiyoh using PHP",
+            "description": "Allows you to interact with KiyOh using PHP",
             "homepage": "https://github.com/JKetelaar/PHP-Kiyoh-API",
             "keywords": [
                 "api",
                 "kiyoh",
                 "php"
             ],
-            "time": "2018-06-01T13:37:05+00:00"
+            "time": "2019-12-06T20:47:44+00:00"
         },
         {
             "name": "psr/http-message",
@@ -387,25 +397,26 @@
         },
         {
             "name": "yahnis-elsts/plugin-update-checker",
-            "version": "v4.8.1",
+            "version": "v4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/YahnisElsts/plugin-update-checker.git",
-                "reference": "908249c92e81c46cb66e4d81632c5e917dc879ae"
+                "reference": "28f29c940cc22754aff85a99645e3c0a51c097e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/YahnisElsts/plugin-update-checker/zipball/908249c92e81c46cb66e4d81632c5e917dc879ae",
-                "reference": "908249c92e81c46cb66e4d81632c5e917dc879ae",
+                "url": "https://api.github.com/repos/YahnisElsts/plugin-update-checker/zipball/28f29c940cc22754aff85a99645e3c0a51c097e8",
+                "reference": "28f29c940cc22754aff85a99645e3c0a51c097e8",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
                 "php": ">=5.2.0"
             },
             "type": "library",
             "autoload": {
                 "files": [
-                    "load-v4p8.php"
+                    "load-v4p9.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -428,7 +439,7 @@
                 "theme updates",
                 "wordpress"
             ],
-            "time": "2019-10-08T12:15:30+00:00"
+            "time": "2020-02-07T11:07:19+00:00"
         }
     ],
     "packages-dev": [],
@@ -438,5 +449,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

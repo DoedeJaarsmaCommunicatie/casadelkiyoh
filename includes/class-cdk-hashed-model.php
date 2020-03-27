@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Class cdk_hashed_model
+ *
+ * @deprecated JKetelaar now also uses the hashed kiyoh url
+ * @see cdk_model
+ */
 class cdk_hashed_model extends cdk_model
 {
     const KIYOHFEEDURL = 'https://www.kiyoh.com/v1/review/feed.xml?hash=';
@@ -36,12 +42,12 @@ class cdk_hashed_model extends cdk_model
         } catch (\GuzzleHttp\Exception\ServerException $e) {
             $this->add_company_parse_error();
         }
-        
+
         $res = $this->client->request('GET', self::KIYOHFEEDURL . $this->hash);
         $body = $res->getBody()->getContents();
         $this->parse_company($body);
     }
-    
+
     private function parse_company($xml): void
     {
         try {
@@ -50,11 +56,11 @@ class cdk_hashed_model extends cdk_model
             $this->add_company_parse_error();
         }
 
-        
+
         $this->company['total_score'] = (string) $body->averageRating;
         $this->company['total_reviews'] = (string) $body->numberReviews;
         $this->company['company_url'] = sprintf(self::KIYOHURL, (string) $body->locationId, str_replace(' ', '_', strtolower((string) $body->locationName)));
-        
+
         foreach ( $body->reviews as $review ) {
             foreach ($review->reviews[0]->reviewContent as $reviewContent) {
                 foreach ($reviewContent as $content) {
