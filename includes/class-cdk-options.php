@@ -72,7 +72,7 @@ class cdk_options
             'cdelk',
             [
                 'type' => 'text',
-                'settings' => 'cdelk_hash_code',
+                'settings' => 'cdelk_invite_key',
                 'label' => esc_html__('Klantenvertellen publicatie hash key', 'casadelkiyoh'),
                 'section' => 'cdelk_settings_main_section'
             ]
