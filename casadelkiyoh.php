@@ -8,7 +8,7 @@
  * Author URI:      https://doedejaarsma.nl/
  * Text Domain:     casadelkiyoh
  * Domain Path:     /languages
- * Version:         1.3.1
+ * Version:         1.3.2
  *
  * @package         Casadelkiyoh
  */
